@@ -39,12 +39,12 @@ void gameScreen() {
  fill(240, 5, 5);
  ellipse(x, y, 50, 50);
  x = x + xSpeed;
- if (x + targetDiameter/2 > width || x - targetDiameter/2 < 0) {
+ if (x + targetDiameter/2 >= width || x - targetDiameter/2 <= 0) {
  xSpeed = xSpeed * -1;}
  
  
  y = y + ySpeed;
- if (y + targetDiameter/2 > height || y - targetDiameter/2 < 0) {
+ if (y + targetDiameter/2 >= height || y - targetDiameter/2 <= 0) {
  ySpeed = ySpeed * -1;}
 
  
